@@ -57,11 +57,14 @@ button {
 /* navbar */
 
 #navbar {
+  position: fixed;
+  width: 100%;
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  background-color: pink;
+  background-color:transparent;
   align-items: center;
+  transition: all 300ms ease-in-out;
 }
 
 .navbar__logo {
@@ -96,11 +99,16 @@ button {
   background-color: darksalmon;
 }
 
+#navbar.back--dark {
+  background-color: pink;
+}
+
 /* home */
 
 #home {
+
   background: url("images/pexels-pixabay-531321.jpg") center/cover no-repeat;
-  padding: 40px;
+  padding: 100px 40px 40px 40px;
   text-align: center;
 }
 
@@ -126,3 +134,50 @@ button {
   border: 2px solid white;
 }
 
+
+/* about me */
+
+.section {
+  text-align: center;
+}
+
+.stacks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stack__image {
+  background-color: var(--main-color);
+  width: 100px;
+  height: 100px;
+}
+
+.stack {
+  width: 200px;
+}
+
+/* skills */
+
+.skills { 
+  background-color: yellowgreen;
+}
+
+.skills__table {
+  display: flex;
+}
+
+.skills__left {
+  flex-basis: 60%;
+  background-color: darkcyan;
+}
+
+.skills__right {
+  flex-basis: 40%;
+  background-color: darkgreen;
+}
+
+
+.skill__html {
+  display: flex;
+  justify-content: space-between;
+}

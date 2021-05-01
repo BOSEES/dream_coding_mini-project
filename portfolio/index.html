@@ -14,12 +14,12 @@
         </div>
         <div class="navbar__menu">
           <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about_me">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#my_work">My work</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
           </ul>
         </div>
       </nav>
@@ -27,78 +27,74 @@
       <img class="home__avatar" src="./images/KakaoTalk_Photo_2020-10-30-13-55-54.jpeg" alt="avatar">
         <h1 class="home__title">Hello, I'm duddlf</h1>
         <h2 class="home__description">asdaasdasdasdasdasdasdasdasdasdasdasdasd</h2>
-        <button class="home__contact">CONTACT ME</button>
+        <button class="home__contact" data-link="#contact">CONTACT ME</button>
     </section>
     </section>
     <!-- about me -->
-    <section class="about_me">
+    <section id="about_me"class="section">
       <h1>About me</h1>
       <h3>asdasdasdadasdasdasdasdasdasd</h3>
       <div class="stacks">
         <div class="stack">
           <img class="stack__image" src="" alt="">
           <h2 class="stack__title">Front-end</h2>
-          <h3 class="stack__description">HTML, CSS, Javascript, Typescript, React, vue, web APIs</h3>
+          <h3 class="stack__description">HTML, CSS, Javascript,<br> Typescript, React, vue, web APIs</h3>
         </div>
         <div class="stack">
           <img class="stack__image" src="" alt="">
           <h2 class="stack__title">Mobile</h2>
-          <h3 class="stack__description">Android,IOS, React Native, Flutter, java, Swift, Kotlin</h3>
+          <h3 class="stack__description">Android,IOS, React Native,<br> Flutter, java, Swift, Kotlin</h3>
         </div>
         <div class="stack">
           <img class="stack__image" src="" alt="">
           <h2 class="stack__title">Back-end</h2>
-          <h3 class="stack__description">Java, javascript, Go, NodeJS, Rest APIs</h3>
+          <h3 class="stack__description">Java, javascript, Go,<br> NodeJS, Rest APIs</h3>
         </div>
       </div>
     </section>
     <!-- skills -->
-    <section class="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <h3>aldlfajsldkfjaskldfjasldfjalsdf</h3>
       <div class="skills__table">
-        <div class="skills_state">
+        <div class="skills__left">
           <h3>Skills</h3>
           <div class="skill__html">
             <h4>HTML</h4>
             <h4>99%</h4>
-            <div class="gage"></div>
           </div>
           <div class="skill__html">
             <h4>HTML</h4>
             <h4>99%</h4>
-            <div class="gage"></div>
           </div>
           <div class="skill__html">
             <h4>HTML</h4>
             <h4>99%</h4>
-            <div class="gage"></div>
           </div>
           <div class="skill__html">
             <h4>HTML</h4>
             <h4>99%</h4>
-            <div class="gage"></div>
           </div>
           <div class="skill__html">
             <h4>HTML</h4>
             <h4>99%</h4>
-            <div class="gage"></div>
           </div>
           <div class="skill__html">
             <h4>HTML</h4>
             <h4>99%</h4>
-            <div class="gage"></div>
           </div>
         </div>
-        <div class="skills_tools">
-          <h3>asdawdasdawdasdawdasdawdas</h3>
+        <div class="skills__right">
+          <div class="skills_tools">
+            <h3>asdawdasdawdasdawdasdawdas</h3>
+          </div>
+          <div class="skills_etc">git</div>
         </div>
-        <div class="skills_etc">git</div>
       </div>
     </section>
     <!-- my work -->
-    <section class="my_work">
+    <section id="my_work" class="section">
       <div class="work_buttons">
         <button class="button__all"></button>
         <button class="button__front"></button>
@@ -118,7 +114,7 @@
 
     </section>
     <!-- testimonials -->
-    <section class="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h3>see what they say about me</h3>
       <div class="say">
@@ -127,7 +123,7 @@
       </div>
     </section>
     <!-- contact -->
-    <section class="contact">
+    <section id="contact" class="section">
       <h1>let's talk</h1>
       <h3>rladuddlf3@naver.com</h3>
       <div class="contact__links">
