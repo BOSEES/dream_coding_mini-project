@@ -47,7 +47,12 @@ h3 {
   margin: 8px 0;
 }
 
-
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
 /* navbar */
 
@@ -90,3 +95,34 @@ h3 {
 .navbar__menu__item:hover {
   background-color: darksalmon;
 }
+
+/* home */
+
+#home {
+  background: url("images/pexels-pixabay-531321.jpg") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius:50%;
+  border:1px solid white;
+}
+
+.home__title,
+.home__description {
+  color:white;
+}
+
+.home__contact {
+  font-size: var(--font-medium);
+  font-weight: border;
+  margin: 10px;
+  padding:8px 24px;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
