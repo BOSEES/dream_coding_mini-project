@@ -1,0 +1,19 @@
+/* Global */
+
+:root {
+
+  /* size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-small: 16px;
+
+  --logo-size: 2em;
+  --avatar-size: 20em;
+  /* color */
+  --main-color: darkgray; 
+}
+
+* {
+  box-sizing: border-box;
+  
+}
