@@ -4,6 +4,16 @@ const navbarLink = document.querySelector(".navbar__menu");
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 const contactMeLink = document.querySelector(".home__contact");
+const home = document.querySelector("#home");
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight) {
+    home.classList.add("opacity");
+  } else {
+    home.classList.remove("opacity")
+  }
+})
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > navbarHeight) {
@@ -33,3 +43,4 @@ contactMeLink.addEventListener("click", (event) => {
   const toScroll = document.querySelector(link);
   toScroll.scrollIntoView({behavior: "smooth"});
 })
+
