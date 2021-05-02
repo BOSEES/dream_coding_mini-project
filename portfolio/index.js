@@ -4,15 +4,24 @@ const navbarLink = document.querySelector(".navbar__menu");
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 const contactMeLink = document.querySelector(".home__contact");
-const home = document.querySelector("#home");
+const home = document.querySelector(".home_container");
 const homeHeight = home.getBoundingClientRect().height;
+const arrow = document.querySelector(".arrow");
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY > homeHeight) {
-    home.classList.add("opacity");
-  } else {
-    home.classList.remove("opacity")
-  }
+  arrow.style.opacity = scrollY / navbarHeight;
+})
+
+arrow.addEventListener("click", (event) => {
+  const link = event.target.dataset.link;
+  const toScroll = document.querySelector(link);
+  
+  toScroll.scrollIntoView({behavior: "smooth"});
+  
+})
+
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - scrollY / homeHeight;
 })
 
 document.addEventListener("scroll", () => {

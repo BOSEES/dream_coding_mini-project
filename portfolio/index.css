@@ -111,9 +111,8 @@ button {
   text-align: center;
 }
 
-#home.opacity {
-  opacity: 0;
-  transition: all 300ms ease-in-out;
+.home_container {
+  z-index: 0;
 }
 
 .home__avatar {
@@ -184,4 +183,16 @@ button {
 .skill__html {
   display: flex;
   justify-content: space-between;
+}
+
+.arrow {
+  opacity: 0;
+  cursor: pointer;
+  position: fixed;
+  width:3em;
+  height: 3em;
+  background-color: pink;
+  border-radius: 50%;
+  bottom:5vh;
+  right: 5vh;
 }
